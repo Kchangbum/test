@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+        <legend>INPUT TAG</legend>
+        <ul>
+            <li>
+            <label for="Text">Text</label>
+            <input type="text" id="text" required placeholder="이름을 입력해주세요" autofocus>    
+            </li>
+
+            <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            </li>
+
+            <li>
+                <label for="tel">전화번호</label>
+                <input type="tel" id="tel"required>
+            </li>
+
+            <li>
+                <label for="number">number</label>
+                <input type="number" id="number"required min="1" max="10">
+            </li>
+
+            <li>
+                <label for="range">range</label>
+                <input type="range" id="range"required min="1", max="10">
+            </li>
+
+            <li>
+                <label for="password">password</label>
+                <input type="password" id="password"required>
+            </li>
+        </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>날짜관련</legend>
+            <ul>
+                <label for="date">Date</label>
+                <input type="date" id="date" required min="2019-01-01" max="2023-12-31" required>
+            </ul>
+
+            <ul>
+                <label for="month">month</label>
+                <input type="month" id="month" required>
+            </ul>
+
+            <ul>
+                <label for="week">week</label>
+                <input type="week" id="week"required>
+            </ul>
+
+            <ul>
+                <input type="hidden" value="">
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>당신의 MBTI는?</legend>
+            <ul>
+               
+                    <label for="INFP">INFP</label>
+                    <input type="radio" name="mbti" value="INFP">
+                
+
+               
+                    <label for="INFJ">INFJ</label>
+                    <input type="radio" name="mbti" value="INFJ">
+
+               
+                    <label for="ISTP">ISTP</label>
+                    <input type="radio" name="mbti" value="ISTP">
+               
+
+               
+                    <label for="ISFJ">ISFJ</label>
+                    <input type="radio" name="mbti" value="ISFJ">
+               
+            </ul>
+            <ul>
+                    <label for="ESTJ">ESTJ</label>
+                    <input type="radio" name="mbti" value="ESTJ">
+                
+
+               
+                    <label for="ESFJ">ESFJ</label>
+                    <input type="radio" name="mbti" value="ESFJ">
+
+               
+                    <label for="INTJ">INTJ</label>
+                    <input type="radio" name="mbti" value="INTJ">
+               
+
+               
+                    <label for="INTP">INTP</label>
+                    <input type="radio" name="mbti" value="INTP">
+                </ul>
+
+                <ul>
+                    <label for="ENTJ">ENTJ</label>
+                    <input type="radio" name="mbti" value="ENTJ">
+                
+
+               
+                    <label for="ENTP">ENTP</label>
+                    <input type="radio" name="mbti" value="ENTP">
+
+               
+                    <label for="ENFJ">ENFJ</label>
+                    <input type="radio" name="mbti" value="ENFJ">
+               
+
+               
+                    <label for="ENFP">ENFP</label>
+                    <input type="radio" name="mbti" value="ENFP">
+                </ul>
+
+
+                <ul>
+                    <label for="ISTP">ISTP</label>
+                    <input type="radio" name="mbti" value="ISTP">
+                
+
+               
+                    <label for="ISFP">ISFP</label>
+                    <input type="radio" name="mbti" value="ISFP">
+
+               
+                    <label for="ENTP">ENTP</label>
+                    <input type="radio" name="mbti" value="ENTP">
+               
+
+               
+                    <label for="ESFP">ESFP</label>
+                    <input type="radio" name="mbti" value="ESFP">
+                </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>자기소개서</legend>
+            <textarea name="" id="" cols="125" rows="5"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>주문 상품을 선택해주세요</legend>
+            <select name="goods" id="goods">
+                <option value="10kg" selected>사과-10kg</option>
+                <option value="20kg">사과-20kg</option>
+                <option value="30kg">사과-30kg</option>
+                <option value="40kg">사과-40kg</option>
+                <option value="50kg">사과-50kg</option>
+            </select>
+
+            <label for="박스 크기">박스 크기 선택</label>
+            <input list="box-size" id="박스 크기" name="박스크기">
+            <datalist id="box-size">
+                <option value="큰거"></option>
+                <option value="중간"></option>
+                <option value="작은거"></option>
+
+            </datalist>
+        </fieldset>
+
+        
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+        <botton type="button" onclick="alert('Hello world!')">버튼</botton>
+
+    </form>
+</body>
+</html>
